@@ -49,19 +49,19 @@
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&leader1> <&to BASE>;
+        bindings = <&leader1>, <&to BASE>;
       };
       dtap_lbrc: dtap_lbrace {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&kp LCBR> <&kp LBRC>;
+        bindings = <&kp LCBR>, <&kp LBRC>;
       };
       dtap_rbrc: dtap_rbrace {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&kp RCBR> <&kp RBRC>;
+        bindings = <&kp RCBR>, <&kp RBRC>;
       };
 
 
