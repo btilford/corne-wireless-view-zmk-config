@@ -187,8 +187,8 @@ bluetooth_layer {
 };
 /*
 TEMPLATE layer
-&trans  &trans  &trans  &trans  &trans  &trans /*|*/   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans /*|*/   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans /*|*/   &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans /*|*/   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
 */ 
