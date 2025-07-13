@@ -38,7 +38,7 @@
 / {
     behaviors {
       leader1: leader1 {
-        compatible = "zmk,behavior-leader";
+        compatible = "zmk,behavior-leader-key";
         #binding-cells = <0>;
         usb { sequence = <U S B>; bindings = <&out OUT_USB>; };
         ble { sequence = <B L E>; bindings = <&out OUT_BLE>; };
