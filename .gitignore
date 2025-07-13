@@ -1,2 +1,8 @@
-
+.venv/
 .zmk/
+.west/
+modules/
+zephyr/
+build/
+zmk/
+zmk-leader-key/
