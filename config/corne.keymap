@@ -43,25 +43,29 @@
         usb { sequence = <U S B>; bindings = <&out OUT_USB>; };
         ble { sequence = <B L E>; bindings = <&out OUT_BLE>; };
         fn_layer { sequence = <L F>; bindings = <&mo FKEYS>; };
-        blootooth_layer { sequence = <L B>; bindings = <&mo BTOOTH>; };
+        bluetooth_layer { sequence = <L B>; bindings = <&mo BTOOTH>; };
+
       };
-      ret2base: return_to_base {
+      ret2base: ret2base {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
-        tapping-term-ms = <200>;
+        tapping-term-ms = <230>;
         bindings = <&leader1>, <&to BASE>;
+        label = "Return to Base Layer";
       };
       dtap_lbrc: dtap_lbrace {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
         bindings = <&kp LBRC>, <&kp LBKT>;
+        label = "Tap Dance Left Brace";
       };
       dtap_rbrc: dtap_rbrace {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
         bindings = <&kp RBRC>, <&kp RBKT>;
+        label = "Tap Dance Right Brace";
       };
 
 
