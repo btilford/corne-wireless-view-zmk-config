@@ -30,13 +30,13 @@
 };
 &lt {
     flavor = "tap-preferred";
-    tappig-term-ms = <230>;
+    tapping-term-ms = <230>;
     quick-tap-ms = <25>;
     hold-trigger-on-release;
 };
 &mt {
     flavor = "tap-preferred";
-    tappig-term-ms = <230>;
+    tapping-term-ms = <230>;
     quick-tap-ms = <25>;
     hold-trigger-on-release;
 };
