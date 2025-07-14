@@ -39,7 +39,7 @@
     tappig-term-ms = <230>;
     quick-tap-ms = <25>;
     hold-trigger-on-release;
-}
+};
 
 
 
