@@ -6,8 +6,9 @@ manifest:
       url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: v0.2
+      # remote: zmkfirmware
+      remote: urob
+      revision: v0.2+fix-child-nodes
       # revision: main
       import: app/west.yml
     - name: zmk-leader-key
