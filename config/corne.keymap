@@ -25,7 +25,8 @@
 #define BTOOTH 9
 
 &caps_word {
-    mods = <(MOD_LSFT | MOD_RSFT)>;
+    /* mods = <(MOD_LSFT | MOD_RSFT)>; */
+    /delete-property/ ignore-modifiers;
     continue-list = <UNDERSCORE MINUS DELETE BACKSPACE>;
 };
 &lt {
