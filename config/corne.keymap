@@ -48,9 +48,9 @@
             timeout-ms = <50>;
             key-positions = <9 31>;
             bindings = <&caps_word>;
-        }
-    }
-}
+        };
+    };
+};
 
 / {
     behaviors {
