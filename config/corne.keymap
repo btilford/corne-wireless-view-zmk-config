@@ -45,8 +45,8 @@
     combos {
         compatible = "zmk,combos";
         combo_cw {
-            timeout-ms = <50>;
-            key-positions = <9 31>;
+            timeout-ms = <65>;
+            key-positions = <9 30>;
             bindings = <&caps_word>;
         };
     };
@@ -68,6 +68,7 @@
         #binding-cells = <0>;
         /* usb { sequence = <U S B>; bindings = <&out OUT_USB>; }; */
         /* ble { sequence = <B L E>; bindings = <&out OUT_BLE>; }; */
+        base_layer { sequence = <L B>; bindings = <&to BASE>; };
         fn_layer { sequence = <L F>; bindings = <&mo FKEYS>; };
         bluetooth_layer { sequence = <L B>; bindings = <&mo BTOOTH>; };
 
@@ -75,7 +76,7 @@
       ret2base: ret2base {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
-        tapping-term-ms = <230>;
+        tapping-term-ms = <250>;
         bindings = <&leader1>, <&to BASE>;
         label = "Return to Base Layer";
       };
@@ -111,7 +112,7 @@
 &kp TAB    &kp Q       &kp W        &kp E          &kp R          &kp T            /*|*/    &kp Y         &kp U         &kp I        &kp O          &kp P          &lt BTOOTH BSPC
 &gresc     &mt LGUI A  &mt LCTRL S  &mt LSHIFT D   &lt MOTION F   &mt LALT G       /*|*/    &mt RALT H    &lt TEXT J &mt RSHIFT K  &mt RCTRL L    &mt RGUI SEMI  &kp SQT
 &mt LSHFT LPAR &kp Z   &kp X        &kp C          &kp V          &kp B            /*|*/    &lt NUMPD N    &lt MEDIA M &kp COMMA     &kp DOT      &kp FSLH       &mt RSHFT RPAR
-                                    &mo DM         &ret2base      &lt MOUSE SPACE  /*|*/    &lt SYM RET    &mo TEXT &kp RALT
+                                    &mo DM         &leader1      &lt MOUSE SPACE  /*|*/    &lt SYM RET    &mo TEXT &kp RALT
             >;
         };
 
