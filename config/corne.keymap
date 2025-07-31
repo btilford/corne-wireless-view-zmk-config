@@ -41,19 +41,27 @@
     hold-trigger-on-release;
 };
 
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_cw {
+            timeout-ms = <50>;
+            key-positions = <9 31>;
+            bindings = <&caps_word>;
+        }
+    }
+}
 
-
-/* #define MT_CW(hold, tap) &mt_cw hold tap */
 / {
     behaviors {
-      mt_cw: mt_caps_word {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <2>;
-        bindings = <&kp>, <&kp>;
-        flavor = "tap-preferred";
-        taping_term_ms = <230>;
-        quick_tap_ms = <25>;
-      };
+      /* mt_cw: mt_caps_word { */
+      /*   compatible = "zmk,behavior-hold-tap"; */
+      /*   #binding-cells = <2>; */
+      /*   bindings = <&kp>, <&kp>; */
+      /*   flavor = "tap-preferred"; */
+      /*   taping_term_ms = <230>; */
+      /*   quick_tap_ms = <25>; */
+      /* }; */
 
       leader1: leader1 {
         compatible = "zmk,behavior-leader-key";
@@ -91,7 +99,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+       default_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
